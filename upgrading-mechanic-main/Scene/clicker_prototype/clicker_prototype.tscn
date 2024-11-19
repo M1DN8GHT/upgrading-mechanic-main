@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scene/clicker_prototype/clicker_prototype.gd" id="1_i2g1q"]
 
-[node name="ClickerPrototype" type="Control" node_paths=PackedStringArray("label")]
+[node name="ClickerPrototype" type="Control" node_paths=PackedStringArray("label", "upgrade_button")]
 custom_minimum_size = Vector2(0, 80)
 layout_mode = 3
 anchors_preset = 15
@@ -12,6 +12,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_i2g1q")
 label = NodePath("Click amount")
+upgrade_button = NodePath("Upgrade")
 
 [node name="Click amount" type="Label" parent="."]
 custom_minimum_size = Vector2(0, 80)
